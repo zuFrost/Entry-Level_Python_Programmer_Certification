@@ -10,6 +10,10 @@ age = int(input("Haw old are you today? "))
 # print("and loves the color " + color + ".")
 
 #2st variant
-print(name, end=" ")
-print("is " + str(age) + " years old", end=" ")
-print("and loves the color " + color + ".", end=" ")
+# print(name, end=" ")
+# print("is " + str(age) + " years old", end=" ")
+# print("and loves the color " + color + ".", end=" ")
+
+
+#3st variant
+print(name, 'is',  age, 'years old and loves the color', color, '.', sep=" ")
