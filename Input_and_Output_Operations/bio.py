@@ -16,4 +16,4 @@ age = int(input("Haw old are you today? "))
 
 
 #3st variant
-print(name, 'is',  age, 'years old and loves the color', color, '.', sep=" ")
+print(name, 'is',  age, 'years old and loves the color', color + '.', sep=", ")
