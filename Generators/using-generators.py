@@ -45,10 +45,17 @@ what is expected compared to what is happening.
 #>>> chr(97)
 #'a'
 def char_range(first_char, last_char, step=1):
-    i = ord(first_char)
-    while i <= ord(last_char):
-        yield chr(i)
-        i += 1
+    if ord(first_char) <= ord(last_char):
+        i = ord(first_char)
+        while i <= ord(last_char):
+            yield chr(i)
+            i += 1
+    else:
+        i = ord(first_char)
+        while i >= ord(last_char):
+            yield chr(i)
+            i -= 1
+
 
 # Tests to verify the implementation of char_range
 # *Do not modify
