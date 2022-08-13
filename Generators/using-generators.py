@@ -49,12 +49,12 @@ def char_range(first_char, last_char, step=1):
         i = ord(first_char)
         while i <= ord(last_char):
             yield chr(i)
-            i += 1
+            i += step
     else:
         i = ord(first_char)
         while i >= ord(last_char):
             yield chr(i)
-            i -= 1
+            i -= step
 
 
 # Tests to verify the implementation of char_range
